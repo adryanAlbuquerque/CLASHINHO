@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatísticas Clash Royale</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Consultas Clash Royale</h1>
+    <label for="consulta">Escolha a consulta:</label>
+    <select id="consulta" onchange="atualizarCampos()">
+      <option value="1">Porcentagem de vitórias/derrotas com carta</option>
+      <option value="2">Decks com mais de X% de vitórias</option>
+      <option value="3">Derrotas com combo de cartas</option>
+      <option value="4">Vitórias com carta e condições</option>
+      <option value="5">Combos com N cartas e Y% vitórias</option>
+    </select>
+
+    <div id="campos-dinamicos"></div>
+
+    <button onclick="consultar()">Consultar</button>
+
+    <div class="resultado" id="resultado">Resultado aparecerá aqui...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
